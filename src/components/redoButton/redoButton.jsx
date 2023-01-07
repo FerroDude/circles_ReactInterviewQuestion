@@ -1,5 +1,10 @@
 import React from 'react';
+import './redoButton.css';
 
-export const redoButton = () => {
-  return <div>redoButton</div>;
+export const RedoButton = () => {
+  return (
+    <div>
+      <button className="redo-button">Redo</button>
+    </div>
+  );
 };

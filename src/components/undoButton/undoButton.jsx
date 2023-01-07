@@ -1,5 +1,10 @@
 import React from 'react';
+import './undoButton.css';
 
-export const undoButton = () => {
-  return <div>undoButton</div>;
+export const UndoButton = () => {
+  return (
+    <div>
+      <button className="undo-button">Undo</button>
+    </div>
+  );
 };
