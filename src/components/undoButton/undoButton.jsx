@@ -1,10 +1,13 @@
 import React from 'react';
 import './undoButton.css';
 
-export const UndoButton = () => {
+export const UndoButton = (props) => {
+  const { handleUndoButton } = props;
   return (
     <div>
-      <button className="undo-button">Undo</button>
+      <button onClick={handleUndoButton} className="undo-button">
+        Undo
+      </button>
     </div>
   );
 };

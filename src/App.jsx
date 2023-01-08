@@ -17,16 +17,22 @@ const App = () => {
   };
 
   const handleUndoButton = () => {
-    console.log('undo button clicked');
+    const newCircles = circles.filter(
+      (circle, index) => index !== circles.length - 1
+    );
+    setCircles(newCircles);
   };
 
   return (
     <>
-      <UndoButton onClick={handleUndoButton} />
-      <RedoButton />
+      <div>
+        <UndoButton handleUndoButton={handleUndoButton} />
+        <RedoButton />
+      </div>
+
       <div onClick={handleClick} className="App">
         {circles.map((circle) => {
-          return <Circle key={circle} circle={circle} />;
+          return <Circle key={Math.random()} circle={circle} />;
         })}
       </div>
     </>
