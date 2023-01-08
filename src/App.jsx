@@ -25,10 +25,8 @@ const App = () => {
 
   return (
     <>
-      <div>
-        <UndoButton handleUndoButton={handleUndoButton} />
-        <RedoButton />
-      </div>
+      <UndoButton circles={circles} handleUndoButton={handleUndoButton} />
+      <RedoButton circles={circles} />
 
       <div onClick={handleClick} className="App">
         {circles.map((circle) => {

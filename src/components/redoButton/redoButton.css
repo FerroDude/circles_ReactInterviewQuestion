@@ -30,3 +30,9 @@
   background: #fff;
   color: #1f1f1f !important;
 }
+
+.redo-button:disabled {
+  cursor: not-allowed;
+  background-color: darkred;
+  border: solid 2px darkred;
+}
