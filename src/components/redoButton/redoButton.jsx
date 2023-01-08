@@ -2,10 +2,14 @@ import React from 'react';
 import './redoButton.css';
 
 export const RedoButton = (props) => {
-  const { circles } = props;
+  const { redoCircles, handleRedoButton } = props;
   return (
     <div>
-      <button disabled={true} className="redo-button">
+      <button
+        onClick={handleRedoButton}
+        disabled={redoCircles.length === 0}
+        className="redo-button"
+      >
         Redo
       </button>
     </div>
