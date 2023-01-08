@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 const App = () => {
   const [circles, setCircles] = useState([]);
-  const [redoCircles, setRedoCircles] = useState([]);
 
   const handleClick = (e) => {
     const { clientX, clientY } = e;
@@ -21,27 +20,13 @@ const App = () => {
     const newCircles = circles.filter(
       (circle, index) => index !== circles.length - 1
     );
-    const redoCircle = circles[circles.length - 1];
-    setRedoCircles([...redoCircles, redoCircle]);
     setCircles(newCircles);
-  };
-
-  const handleRedoButton = () => {
-    const lastRedoCircle = redoCircles[redoCircles.length - 1];
-    const newRedoCircles = redoCircles.filter(
-      (circle, index) => index !== redoCircles.length - 1
-    );
-    setRedoCircles(newRedoCircles);
-    setCircles([...circles, lastRedoCircle]);
   };
 
   return (
     <>
       <UndoButton circles={circles} handleUndoButton={handleUndoButton} />
-      <RedoButton
-        redoCircles={redoCircles}
-        handleRedoButton={handleRedoButton}
-      />
+      <RedoButton circles={circles} />
 
       <div onClick={handleClick} className="App">
         {circles.map((circle) => {
