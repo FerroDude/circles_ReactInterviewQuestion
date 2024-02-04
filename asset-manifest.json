@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pincodeReact/static/css/main.9a2d6a5d.css",
+    "main.js": "/pincodeReact/static/js/main.3c5ba4fa.js",
+    "index.html": "/pincodeReact/index.html",
+    "main.9a2d6a5d.css.map": "/pincodeReact/static/css/main.9a2d6a5d.css.map",
+    "main.3c5ba4fa.js.map": "/pincodeReact/static/js/main.3c5ba4fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a2d6a5d.css",
+    "static/js/main.3c5ba4fa.js"
+  ]
+}
