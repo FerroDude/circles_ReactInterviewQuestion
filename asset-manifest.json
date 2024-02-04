@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/pincodeReact/static/css/main.9a2d6a5d.css",
-    "main.js": "/pincodeReact/static/js/main.3c5ba4fa.js",
-    "index.html": "/pincodeReact/index.html",
-    "main.9a2d6a5d.css.map": "/pincodeReact/static/css/main.9a2d6a5d.css.map",
-    "main.3c5ba4fa.js.map": "/pincodeReact/static/js/main.3c5ba4fa.js.map"
+    "main.css": "/circles_ReactInterviewQuestion/static/css/main.9a2d6a5d.css",
+    "main.js": "/circles_ReactInterviewQuestion/static/js/main.3c5ba4fa.js",
+    "index.html": "/circles_ReactInterviewQuestion/index.html",
+    "main.9a2d6a5d.css.map": "/circles_ReactInterviewQuestion/static/css/main.9a2d6a5d.css.map",
+    "main.3c5ba4fa.js.map": "/circles_ReactInterviewQuestion/static/js/main.3c5ba4fa.js.map"
   },
   "entrypoints": [
     "static/css/main.9a2d6a5d.css",
